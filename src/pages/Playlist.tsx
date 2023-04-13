@@ -42,7 +42,7 @@ export default function Playlist() {
           class="w-full h-full object-cover object-center select-none"
         />
         <div class="bg-gradient-to-b from-transparent to-gray-900 absolute top-0 w-full h-full"></div>
-        <div class="absolute -bottom-8 left-8 rounded-full overflow-hidden flex gap-6 items-center">
+        <div class="absolute -bottom-8 left-8 overflow-hidden flex gap-6 items-center">
           <div class="w-32">
             <img
               src="/vinyls/black.png"
