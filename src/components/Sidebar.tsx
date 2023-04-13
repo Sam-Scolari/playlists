@@ -7,14 +7,14 @@ import { JSX } from "solid-js";
 
 export default function Sidebar() {
   return (
-    <aside class="w-[300px] p-4 bg-black">
+    <aside class="w-[280px] p-4 bg-black flex-shrink-0">
       <Stoplight />
       <nav class="flex flex-col mt-8 mx-4 gap-8">
         <Group>
-          <NavItem href="/home" icon={FiHome}>
+          <NavItem href="/" icon={FiHome}>
             Home
           </NavItem>
-          <NavItem href="/" icon={BsDisc}>
+          <NavItem href="/playlist" icon={BsDisc}>
             Playlist
           </NavItem>
           <NavItem href="/proposals" icon={BsPeople}>
@@ -102,7 +102,7 @@ function Playlist(props: { href: string; children: string; image: string }) {
         <img
           src={props.image}
           alt={`A link to the Playlists ${props.children}} account`}
-          class="w-8 h-8"
+          class="w-8 h-8 object-cover"
         />
         {props.children}
       </li>

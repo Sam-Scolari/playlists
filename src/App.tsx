@@ -1,15 +1,15 @@
 import { Route, Router, Routes } from "@solidjs/router";
 import Layout from "./layouts/Layout";
-import Home from "./pages/Home";
-import Playlist from "./pages";
+import Home from "./pages";
+import Playlist from "./pages/Playlist";
 import Proposals from "./pages/Proposals";
 
 function Routing() {
   return (
     <Routes>
       <Route path="/" component={Layout}>
-        <Route path="/home" component={Home} />
-        <Route path="/" component={Playlist} />
+        <Route path="/" component={Home} />
+        <Route path="/playlist" component={Playlist} />
         <Route path="/proposals" component={Proposals} />
       </Route>
     </Routes>
